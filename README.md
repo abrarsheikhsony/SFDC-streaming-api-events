@@ -1,6 +1,6 @@
 # Salesforce Streaming API Events
 
-## Streaming API Events Features
+## Streaming Events Features
 <ol type="1">
 <li>PushTopic</li>
 <li>Generic Event</li>
