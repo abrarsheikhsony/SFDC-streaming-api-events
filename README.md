@@ -17,17 +17,33 @@
 <li>Clients can subscribe to some types of events with Apex triggers or declaratively with Process Builder and flows.</li>
 </ul>
 
-
-
 ## Streaming Events Features
 <ol type="1">
+
 <li>PushTopic</li>
-<li>Generic Event</li>
-<li>Platform Event</li>
+<ul>
+<li>Receive changes to Salesforce records based on a SOQL query that you define. <b>The notifications include only the fields that you specify in the SOQL query.</b></li>
+</ul>
+
 <li>Change Data Capture (CDC)</li>
+<ul>
+<li>Receive changes to Salesforce records <b>with all changed fields</b>. Change Data Capture supports more standard objects than PushTopic events and provides more features, such as <b>header fields that contain information about the change.</b></li>
+<li>Change Data Capture is part of a pilot program. To participate in the pilot, contact Salesforce.</li>
+</ul>
+
+<li>Platform Event</li>
+<ul>
+<li>Publish and receive <b>custom payloads with a predefined schema</b>. The data can be anything you define, including business data, such as order information. Specify the data to send by defining a platform event. Subscribe to a platform event channel to receive notifications.</li>
+</ul>
+
+<li>Generic Event</li>
+<ul>
+<li>Publish and receive <b>arbitrary payloads without a defined schema.</b></li>
+</ul>
+
 </ol>
 
-## High Level Overview
+## High Level Overview Events Features
 <table>
 	<tr>
 		<th>API</th>
