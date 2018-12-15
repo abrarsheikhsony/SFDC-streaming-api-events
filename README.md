@@ -11,7 +11,7 @@
 ## When to use Streaming API
 <ul>
 <li>Use Streaming API to receive near-real-time streams of data that are based on changes in Salesforce records or custom payloads.</li>
-<li>For Salesforce record changes, Salesforce publishes notifications when the changes occur</li>
+<li>For Salesforce record changes, Salesforce publishes notifications when the changes occur.</li>
 <li>For custom notifications, you can publish event messages.</li>
 <li>Subscribers can receive notifications using CometD—an implementation of the Bayeux protocol that simulates push technology.</li>
 <li>Clients can subscribe to some types of events with Apex triggers or declaratively with Process Builder and flows.</li>
