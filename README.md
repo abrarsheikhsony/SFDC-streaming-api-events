@@ -12,24 +12,21 @@
 <table>
 	<tr>
 		<th>API</th>
-		<th>Communication</th>
 		<th>Protocol</th>
 		<th>Data Format</th>
-		<th>Details</th>
+		<th>Communication</th>
 	</tr>
 	<tr>
 		<td>Streaming API</td>
-		<td>Asynchronous (stream of data)</td>
 		<td>Bayeux</td>
 		<td>JSON</td>
-		<td></td>
+		<td>Asynchronous (stream of data)</td>
 	</tr>
 	<tr>
 		<td>Platform Events</td>
-		<td>Asynchronous (stream of data)</td>
 		<td>CometD</td>
 		<td>JSON</td>
-		<td>Streaming API CometD protocol</td>
+		<td>Asynchronous (stream of data)</td>
 	</tr>
 </table>
 
