@@ -1,5 +1,13 @@
 # Salesforce Streaming API Events
 
+## Streaming API
+<ul>
+<li>Streaming API is a specialized API for setting up notifications that trigger when changes are made to Salesforce records or custom payloads.</li>
+<li>It uses a publish-subscribe, or pub/sub, model in which users can subscribe to channels that broadcast certain types of data changes.</li>
+<li>The pub/sub model reduces the number of API requests by eliminating the need for polling.</li>
+<li>Streaming API is great for writing apps that would otherwise need to frequently poll for changes.</li>
+</ul>
+
 ## Streaming Events Features
 <ol type="1">
 <li>PushTopic</li>
