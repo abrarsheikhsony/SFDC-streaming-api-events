@@ -1,6 +1,12 @@
-# SFDC-streaming-api-events
-Streaming API Events (PushTopic, Change Data Capture (CDC), Platform Event, Generic Event)
+# Salesforce Streaming API Events
 
+## Streaming API Events Features
+<ol type="1">
+<li>PushTopic</li>
+<li>Generic Event</li>
+<li>Platform Event</li>
+<li>Change Data Capture (CDC)</li>
+</ol>
 
 
 
