@@ -22,8 +22,7 @@
 
 <li>PushTopic</li>
 <ul>
-<li>Receive changes to Salesforce records based on a SOQL query that you define. <b>The notifications include only the fields that you specify in the SOQL query.</b></li>
-<li>A PushTopic triggers notifications for changes in Salesforce records resulting from a create, update, delete, or undelete operation. A PushTopic notification is based on the criteria that you specify in the PushTopic record and the SOQL query that you define. Only the fields specified in the query are included in the notification. The PushTopic defines a subscription channel.</li>
+<li>A PushTopic triggers notifications for changes in Salesforce records resulting from a create, update, delete, or undelete operation. A PushTopic <b>notification is based on the criteria that you specify in the PushTopic record and the SOQL query that you define.</b> Only the fields specified in the query are included in the notification. The PushTopic defines a subscription channel.</li>
 </ul>
 
 <li>Change Data Capture (CDC)</li>
@@ -35,6 +34,7 @@
 <li>Platform Event</li>
 <ul>
 <li>Publish and receive <b>custom payloads with a predefined schema</b>. The data can be anything you define, including business data, such as order information. Specify the data to send by defining a platform event. Subscribe to a platform event channel to receive notifications.</li>
+<li>A Salesforce entity that represents the definition of the custom data that you send in a platform event message. You create a platform event and define its fields in Salesforce. The subscription channel is based on the platform event name.</li>
 </ul>
 
 <li>Generic Event</li>
