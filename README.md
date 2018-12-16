@@ -58,11 +58,7 @@
 streaming apps in the browser.</li>
 <li>To call the component’s methods, add the lightning:empApi component inside your custom component and assign an aura:id
 attribute to it.</li>
-<li> 
-``
-<lightning:empApi aura:id="empApi"/>
-`` 
-	</li>
+<li> ```<lightning:empApi aura:id="empApi"/>``` </li>
 <li>Then in the client-side controller, add functions to call the component methods.</li>
 </ul>
 
