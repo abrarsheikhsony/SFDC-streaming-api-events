@@ -23,6 +23,7 @@
 <li>PushTopic</li>
 <ul>
 <li>A PushTopic triggers notifications for changes in Salesforce records resulting from a create, update, delete, or undelete operation. A PushTopic <b>notification is based on the criteria that you specify in the PushTopic record and the SOQL query that you define.</b> Only the fields specified in the query are included in the notification. The PushTopic defines a subscription channel.</li>
+<li>Supported Objects: Account, Contact, Opportunity, Custom Objects</li>
 </ul>
 
 <li>Change Data Capture (CDC)</li>
