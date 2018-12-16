@@ -51,7 +51,21 @@
 <li>CometD is a scalable HTTP-based event routing bus that uses an AJAX push technology pattern known as Comet. It implements the Bayeux protocol.</li>
 <li>Long polling, also called Comet programming, allows emulation of an information push from a server to a client. Similar to a normal poll, the client connects and requests information from the server. However, instead of sending an empty response if information isn't available, the server holds the request and waits until information is available (an event occurs). The server then sends a complete response to the client. The client then immediately re-requests information. The client continually maintains a connection to the server, so it’s always waiting to receive a response. In the case of server timeouts, the client connects again and starts over.</li>
 </ul>
-	
+
+## Subscribe to and Replay Events Using a Lightning Component
+<ul>
+<li>The lightning:empApi component uses a shared CometD-based Streaming API connection, enabling you to run multiple
+streaming apps in the browser.</li>
+<li>To call the component’s methods, add the lightning:empApi component inside your custom component and assign an aura:id
+attribute to it.</li>
+<li><lightning:empApi aura:id="empApi"/></li>
+<li>Then in the client-side controller, add functions to call the component methods.</li>
+</ul>
+
+## Subscribe to and Replay Events Using a Visualforce Page
+
+
+
 ## High Level Overview Events Features
 <table>
 	<tr>
