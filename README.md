@@ -8,6 +8,12 @@
 <li>Streaming API is great for writing apps that would otherwise need to frequently poll for changes.</li>
 </ul>
 
+## Applications for Streaming API
+<ul>
+<li><b>Applications That Poll Frequently:</b> Applications that have constant polling action against the Salesforce infrastructure, consuming unnecessary API calls and processing time, would benefit from Streaming API because it reduces the number of requests that return no data.</li>
+<li><b>General Notification:</b> Use Streaming API for applications that require general notification of data changes in an org to reduce the number of API calls and improve performance.</li>
+</ul>
+
 ## When to use Streaming API
 <ul>
 <li>Use Streaming API to receive near-real-time streams of data that are based on changes in Salesforce records or custom payloads.</li>
