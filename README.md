@@ -29,7 +29,7 @@
 <li>Change Data Capture (CDC)</li>
 <ul>
 <li>Receive changes to Salesforce records <b>with all changed fields</b>. Change Data Capture supports more standard objects than PushTopic events and provides more features, such as <b>header fields that contain information about the change.</b></li>
-<li>Change Data Capture is part of a pilot program. To participate in the pilot, contact Salesforce.</li>
+<li>Starting with <a href="https://releasenotes.docs.salesforce.com/en-us/spring19/release-notes/rn_data_change_events.htm" target="_blank" alt="Spring '19 release">Spring '19 release</a> Change Data Capture is now Generally Available (GA).</li>
 </ul>
 
 <li>Platform Event</li>
@@ -41,6 +41,12 @@
 <li>Generic Event</li>
 <ul>
 <li>Publish and receive <b>arbitrary payloads without a defined schema.</b></li>
+</ul>
+
+<li>High-Volume Platform Events</li>
+<ul>
+<li>Use high-volume platform events to publish and process millions of events efficiently.</li>
+<li>Starting with <a href="https://releasenotes.docs.salesforce.com/en-us/spring19/release-notes/rn_messaging_high_volume_events.htm" target="_blank" alt="Spring '19 release">Spring '19 release</a> High-Volume Platform Events is now Generally Available (GA).</li>
 </ul>
 
 </ol>
