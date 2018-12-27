@@ -8,6 +8,12 @@
 <li>Streaming API is great for writing apps that would otherwise need to frequently poll for changes.</li>
 </ul>
 
+## Difference b/w Push and Pull Technology
+<ul>
+<li><b>Push technology (also called the publish/subscribe model):</b>, transfers information that is initiated from a Server to the Client.</li>
+<li><b>Pull (also called constant/frequently polling) technology:</b>, in which a request for information is made from a Client to the Server.</li>
+</ul>
+
 ## Applications for Streaming API
 <ul>
 <li><b>Applications That Poll Frequently:</b> Applications that have constant polling action against the Salesforce infrastructure, consuming unnecessary API calls and processing time, would benefit from Streaming API because it reduces the number of requests that return no data.</li>
