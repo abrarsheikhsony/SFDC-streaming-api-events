@@ -10,8 +10,8 @@
 
 ## Difference b/w Push and Pull Technology
 <ul>
-<li><b>Push technology (also called the publish/subscribe model):</b>, transfers information that is initiated from a Server to the Client.</li>
-<li><b>Pull (also called constant/frequently polling) technology:</b>, in which a request for information is made from a Client to the Server.</li>
+<li><b>Push technology (also called the publish/subscribe model)</b>, transfers information that is initiated from a Server to the Client.</li>
+<li><b>Pull technology (also called constant/frequently polling)</b>, in which a request for information is made from a Client to the Server.</li>
 </ul>
 
 ## Applications for Streaming API
