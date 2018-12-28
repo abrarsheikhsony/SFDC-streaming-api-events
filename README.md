@@ -14,6 +14,14 @@
 <li><b>Pull technology (also called constant/frequently polling)</b>, in which a request for information is made from a Client to the Server.</li>
 </ul>
 
+## Streaming API Protocols
+<ul>
+<li>Bayeux is a protocol for transporting asynchronous messages, primarily over HTTP.</li>
+<li>CometD is a scalable HTTP-based event routing bus that uses an AJAX push technology pattern known as Comet. It implements the Bayeux protocol.</li>
+<li>Long polling, also called Comet programming, allows emulation of an information push from a server to a client. Similar to a normal poll, the client connects and requests information from the server. However, instead of sending an empty response if information isn't available, the server holds the request and waits until information is available (an event occurs). The server then sends a complete response to the client. The client then immediately re-requests information. The client continually maintains a connection to the server, so it’s always waiting to receive a response. In the case of server timeouts, the client connects again and starts over.</li>
+<li>You can read more about long polling, Bayeux, or CometD, in the <a href="https://docs.cometd.org/" target="_blank" alt="CometD documentation.">CometD documentation.</a></li>
+</ul>
+
 ## Applications for Streaming API
 <ul>
 <li><b>Applications That Poll Frequently:</b> Applications that have constant polling action against the Salesforce infrastructure, consuming unnecessary API calls and processing time, would benefit from Streaming API because it reduces the number of requests that return no data.</li>
@@ -62,13 +70,6 @@
 </ul>
 
 </ol>
-
-## Streaming API Protocols
-<ul>
-<li>Bayeux is a protocol for transporting asynchronous messages, primarily over HTTP.</li>
-<li>CometD is a scalable HTTP-based event routing bus that uses an AJAX push technology pattern known as Comet. It implements the Bayeux protocol.</li>
-<li>Long polling, also called Comet programming, allows emulation of an information push from a server to a client. Similar to a normal poll, the client connects and requests information from the server. However, instead of sending an empty response if information isn't available, the server holds the request and waits until information is available (an event occurs). The server then sends a complete response to the client. The client then immediately re-requests information. The client continually maintains a connection to the server, so it’s always waiting to receive a response. In the case of server timeouts, the client connects again and starts over.</li>
-</ul>
 
 ## Subscribe to and Replay Events Using a Lightning Component
 <ul>
