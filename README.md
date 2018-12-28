@@ -14,7 +14,8 @@
 <li><b>Pull technology (also called constant/frequently polling)</b>, in which a request for information is made from a Client to the Server.</li>
 </ul>
 
-## Streaming API Protocols
+## Bayeux Protocol, CometD, and Long Polling
+Streaming API uses the Bayeux protocol and CometD for long polling.
 <ul>
 <li>Bayeux is a protocol for transporting asynchronous messages, primarily over HTTP.</li>
 <li>CometD is a scalable HTTP-based event routing bus that uses an AJAX push technology pattern known as Comet. It implements the Bayeux protocol.</li>
