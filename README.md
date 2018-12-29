@@ -45,23 +45,122 @@ Streaming API uses the Bayeux protocol and CometD for long polling.
 <ul>
 <li>A PushTopic triggers notifications for changes in Salesforce records resulting from a create, update, delete, or undelete operation. A PushTopic <b>notification is based on the criteria that you specify in the PushTopic record and the SOQL query that you define.</b> Only the fields specified in the query are included in the notification. The PushTopic defines a subscription channel.</li>
 <li>Supported Objects: Account, Contact, Opportunity, Custom Objects</li>
+<li>
+Sample JSON
+	
+```
+{
+	"clientId":"2t80j2hcog29sdh9ihjd9643a",
+	"data":{
+		"event":{
+			"createdDate":"2016-03-29T16:40:08.208Z",
+			"replayId":13,
+			"type":"created"
+		},
+		"sobject":{
+			"Website":null,
+			"Id":"001D000000KnaXjIAJ",
+			"Name":"TicTacToe"
+		}
+	},
+	"channel":"/topic/TestAccountStreaming"
+}
+```
+</li>
 </ul>
 
 <li>Change Data Capture (CDC)</li>
 <ul>
 <li>Receive changes to Salesforce records <b>with all changed fields</b>. Change Data Capture supports more standard objects than PushTopic events and provides more features, such as <b>header fields that contain information about the change.</b></li>
 <li>Starting with <a href="https://releasenotes.docs.salesforce.com/en-us/spring19/release-notes/rn_data_change_events.htm" target="_blank" alt="Spring '19 release">Spring '19 release</a> Change Data Capture is now Generally Available (GA).</li>
+<li>
+Sample JSON
+
+```
+{
+	"data": {
+		"schema": "IeRuaY6cbI_HsV8Rv1Mc5g",
+		"event": {
+			"replayId": 6
+		},
+		"payload": {
+			"ChangeEventHeader": {
+				"entityName": "Account", 
+				"recordIds": [
+					"<record_ID>"
+				], 
+				"changeType": "CREATE", 
+				"changeOrigin": "com.salesforce.core", 
+				"transactionKey": "001b7375-0086-250e-e6ca-b99bc3a8b69f", 
+				"sequenceNumber": 1, 
+				"isTransactionEnd": true, 
+				"commitTimestamp": 1501010206653, 
+				"commitNumber": 92847272780, 
+				"commitUser": "<User_ID>"
+			}, 
+			"Name": "Acme", 
+			"Description": "Everyone is talking about the cloud. But what does it mean?", 
+			"OwnerId": "<Owner_ID>", 
+			"CreatedDate": "2017-07-25T19:16:44Z", 
+			"CreatedById": "<User_ID>", 
+			"LastModifiedDate": "2017-07-25T19:16:44Z", 
+			"LastModifiedById": "<User_ID>"
+		}
+	}, 
+	"channel": "/data/ChangeEvents"
+}
+```
+</li>
 </ul>
 
 <li>Platform Event</li>
 <ul>
 <li>Publish and receive <b>custom payloads with a predefined schema</b>. The data can be anything you define, including business data, such as order information. Specify the data to send by defining a platform event. Subscribe to a platform event channel to receive notifications.</li>
 <li>A Salesforce entity that represents the definition of the custom data that you send in a platform event message. You create a platform event and define its fields in Salesforce. The subscription channel is based on the platform event name.</li>
+<li>
+Sample JSON
+
+```
+{
+	"data": {
+		"schema": "dffQ2QLzDNHqwB8_sHMxdA", 
+		"event": {
+			"replayId": 2
+		},
+		"payload": {
+			"CreatedDate": "2017-04-09T18:31:40.517Z", 
+			"CreatedById": "005D0000001cSZs", 
+			"Printer_Model__c": "XZO-5", 
+			"Serial_Number__c": "12345", 
+			"Ink_Percentage__c": 0.2
+		}
+	}, 
+	"channel": "/event/Low_Ink__e"
+}
+```
+</li>
 </ul>
 
 <li>Generic Event</li>
 <ul>
 <li>Publish and receive <b>arbitrary payloads without a defined schema.</b></li>
+<li>
+Sample JSON
+
+```
+{
+	"clientId":"a1ps4wpe52qytvcvbsko09tapc",
+	"data":{
+		"event":{
+			"createdDate":"2016-03-29T19:05:28.334Z",
+			"replayId":55
+		},
+		"payload":"This is a message."
+	},
+	"channel":"/u/TestStreaming"
+}
+```
+</li>
 </ul>
 
 <li>High-Volume Platform Events</li>
@@ -83,13 +182,8 @@ Streaming API uses the Bayeux protocol and CometD for long polling.
 <li>Subscribers retrieve events from a channel on the event bus.</li>
 <li>The event bus decouples event publishers from event subscribers.</li>
 <li><img src="supportedimages/EventBus.png"/></li>
+<li>Note: The ReplayId field value, which is populated by the system when the event is delivered to subscribers, refers to the position of the event in the event stream.</li>
 </ul>
-
-## Sample JSON
-
-```
-Hello
-```
 
 ## Subscribe to and Replay Events Using a Lightning Component
 <ul>
