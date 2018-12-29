@@ -45,6 +45,7 @@ Streaming API uses the Bayeux protocol and CometD for long polling.
 <ul>
 <li>A PushTopic triggers notifications for changes in Salesforce records resulting from a create, update, delete, or undelete operation. A PushTopic <b>notification is based on the criteria that you specify in the PushTopic record and the SOQL query that you define.</b> Only the fields specified in the query are included in the notification. The PushTopic defines a subscription channel.</li>
 <li>Supported Objects: Account, Contact, Opportunity, Custom Objects</li>
+<li>Channel = /topic/PushTopicName</li>
 <li>
 Sample JSON
 	
@@ -73,6 +74,11 @@ Sample JSON
 <ul>
 <li>Receive changes to Salesforce records <b>with all changed fields</b>. Change Data Capture supports more standard objects than PushTopic events and provides more features, such as <b>header fields that contain information about the change.</b></li>
 <li>Starting with <a href="https://releasenotes.docs.salesforce.com/en-us/spring19/release-notes/rn_data_change_events.htm" target="_blank" alt="Spring '19 release">Spring '19 release</a> Change Data Capture is now Generally Available (GA).</li>
+<li>Channel = 
+For all change events—/data/ChangeEvents
+For a specific standard object—/data/ObjectNameChangeEvent
+For a specific custom object—/data/CustomObjectName__ChangeEvent	
+</li>
 <li>
 Sample JSON
 
@@ -117,6 +123,7 @@ Sample JSON
 <ul>
 <li>Publish and receive <b>custom payloads with a predefined schema</b>. The data can be anything you define, including business data, such as order information. Specify the data to send by defining a platform event. Subscribe to a platform event channel to receive notifications.</li>
 <li>A Salesforce entity that represents the definition of the custom data that you send in a platform event message. You create a platform event and define its fields in Salesforce. The subscription channel is based on the platform event name.</li>
+<li>Channel = /event/EventName__e</li>
 <li>
 Sample JSON
 
@@ -144,6 +151,7 @@ Sample JSON
 <li>Generic Event</li>
 <ul>
 <li>Publish and receive <b>arbitrary payloads without a defined schema.</b></li>
+<li>Channel = /u/notifications/GenericStreamingChannel</li>
 <li>
 Sample JSON
 
