@@ -180,6 +180,8 @@ Sample JSON
 
 ## Considerations
 <ul>
+<li>If the client receives events, the client must reconnect immediately using CometD to receive the next set of events. If the reconnection doesn't occur within 40 seconds, the server expires the subscription, and the connection closes.</li>
+<li>If no events are generated while the client is waiting and the server closes the connection, CometD must reconnect within 110 seconds. The Bayeux server sends a response to the client that contains the reconnect deadline of 110 seconds in the advice field.</li>
 <li>The maximum size of the HTTP request post body that the server can accept from the client is 32,768 bytes.</li>
 <li>In API version 37.0 and later, Streaming API stores events for 24 hours, enabling you to replay past events. It means can fetch past events that are within the 24-hour retention period.</li>
 <li>Salesforce stores standard-volume events for 24 hours.</li>
@@ -190,6 +192,7 @@ Sample JSON
 <li>The event bus decouples event publishers from event subscribers.</li>
 <li><img src="supportedimages/EventBus.png"/></li>
 <li>Note: The ReplayId field value, which is populated by the system when the event is delivered to subscribers, refers to the position of the event in the event stream.</li>
+<li>To replay events, use the Streaming API endpoint = https://Salesforce_Instance/cometd/44.0/</li>
 </ul>
 
 ## Subscribe to and Replay Events Using a Lightning Component
