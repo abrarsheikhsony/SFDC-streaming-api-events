@@ -203,6 +203,46 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 <li>Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/using_streaming_api_durability.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.</li>
 <li><img src="supportedimages/EventBus.png"/></li>
 
+## PushTopic
+<ul>
+<li>
+	
+```
+PushTopic pushTopic = new PushTopic();
+pushTopic.Name = 'InvoiceStatementUpdates';
+pushTopic.Query = 'SELECT Id, Name, Status__c, Description__c FROM Invoice_Statement__c';
+pushTopic.ApiVersion = 44.0;
+pushTopic.NotifyForOperationCreate = true;
+pushTopic.NotifyForOperationUpdate = true;
+pushTopic.NotifyForOperationUndelete = true;
+pushTopic.NotifyForOperationDelete = true;
+pushTopic.NotifyForFields = 'Referenced';
+insert pushTopic;
+```
+</li>
+
+<li>Because NotifyForFields is set to Referenced, Streaming API will use fields in both the SELECT clause and the WHERE clause to generate a notification.</li>
+<li>Whenever the fields Name, Status__c, or Description__c are updated, a notification will be generated on this channel.</li>
+<li>
+Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/events.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
+<img src="supportedimages/118.png"/>
+</li>
+<li>
+Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/notifications.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
+<img src="supportedimages/118.png"/>
+</li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
 ## Subscribe to and Replay Events Using a Lightning Component
 <ul>
 <li>The <a href="https://developer.salesforce.com/docs/component-library/bundle/lightning:empApi/documentation" target="_blank" alt="lightning:empApi component">lightning:empApi component</a> uses a shared CometD-based Streaming API connection, enabling you to run multiple streaming apps in the browser.</li>
@@ -213,8 +253,6 @@ attribute to it.</li>
 </ul>
 
 ## Subscribe to and Replay Events Using a Visualforce Page
-
-
 
 ## High Level Overview Events Features
 <table>
