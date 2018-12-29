@@ -72,6 +72,19 @@ Streaming API uses the Bayeux protocol and CometD for long polling.
 
 </ol>
 
+## Considerations
+<ul>
+<li>The maximum size of the HTTP request post body that the server can accept from the client is 32,768 bytes.</li>
+<li>In API version 37.0 and later, Streaming API stores events for 24 hours, enabling you to replay past events. It means can fetch past events that are within the 24-hour retention period.</li>
+<li>Salesforce stores standard-volume events for 24 hours.</li>
+<li>Salesforce stores high-volume events for 72 hours.</li>
+<li>Event Bus</li>
+<li>Events are published to the event bus.</li>
+<li>Subscribers retrieve events from a channel on the event bus.</li>
+<li>The event bus decouples event publishers from event subscribers.</li>
+<li><img src="supportedimages/EventBus.png"/></li>
+</ul>
+
 ## Subscribe to and Replay Events Using a Lightning Component
 <ul>
 <li>The <a href="https://developer.salesforce.com/docs/component-library/bundle/lightning:empApi/documentation" target="_blank" alt="lightning:empApi component">lightning:empApi component</a> uses a shared CometD-based Streaming API connection, enabling you to run multiple streaming apps in the browser.</li>
@@ -106,14 +119,6 @@ attribute to it.</li>
 		<td>Asynchronous (stream of data)</td>
 	</tr>
 </table>
-
-## Considerations
-<ul>
-<li>The maximum size of the HTTP request post body that the server can accept from the client is 32,768 bytes.</li>
-<li>In API version 37.0 and later, Streaming API stores events for 24 hours, enabling you to replay past events. It means can fetch past events that are within the 24-hour retention period.</li>
-<li>Salesforce stores standard-volume events for 24 hours.</li>
-<li>Salesforce stores high-volume events for 72 hours.</li>
-</ul>
 
 ## Useful Resources
 <ul>
