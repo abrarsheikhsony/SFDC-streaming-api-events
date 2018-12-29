@@ -177,7 +177,7 @@ Sample JSON
 </ul>
 
 ## Compare Streaming Event Features
-Please see the details in the <a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/event_comparison.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
+Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/event_comparison.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
 <img src="supportedimages/CompareStreamingEventFeatures.png"/>
 
 ## Replay Option
@@ -196,6 +196,7 @@ Please see the details in the <a href="https://developer.salesforce.com/docs/atl
 <li>Events are published to the event bus.</li>
 <li>Subscribers retrieve events from a channel on the event bus.</li>
 <li>The event bus decouples event publishers from event subscribers.</li>
+<li>Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/using_streaming_api_durability.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.</li>
 <li><img src="supportedimages/EventBus.png"/></li>
 
 ## Subscribe to and Replay Events Using a Lightning Component
