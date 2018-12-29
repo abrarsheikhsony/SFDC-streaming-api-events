@@ -74,11 +74,10 @@ Sample JSON
 <ul>
 <li>Receive changes to Salesforce records <b>with all changed fields</b>. Change Data Capture supports more standard objects than PushTopic events and provides more features, such as <b>header fields that contain information about the change.</b></li>
 <li>Starting with <a href="https://releasenotes.docs.salesforce.com/en-us/spring19/release-notes/rn_data_change_events.htm" target="_blank" alt="Spring '19 release">Spring '19 release</a> Change Data Capture is now Generally Available (GA).</li>
-<li>Channel = 
-For all change events—/data/ChangeEvents
-For a specific standard object—/data/ObjectNameChangeEvent
-For a specific custom object—/data/CustomObjectName__ChangeEvent	
-</li>
+<li>Channels:</li>
+<li>For all change events—/data/ChangeEvents</li>
+<li>For a specific standard object—/data/ObjectNameChangeEvent</li>
+<li>For a specific custom object—/data/CustomObjectName__ChangeEvent</li>
 <li>
 Sample JSON
 
