@@ -171,6 +171,10 @@ Sample JSON
 
 </ol>
 
+## Compare Streaming Event Features
+Please see the details in the <a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/event_comparison.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
+
+
 ## Replay Option
 <ul>
 <li>Replay ID: Subscriber receives all stored events after the event specified by its replayId value and new events.</li>
@@ -183,9 +187,6 @@ Sample JSON
 <li>If the client receives events, the client must reconnect immediately using CometD to receive the next set of events. If the reconnection doesn't occur within 40 seconds, the server expires the subscription, and the connection closes.</li>
 <li>If no events are generated while the client is waiting and the server closes the connection, CometD must reconnect within 110 seconds. The Bayeux server sends a response to the client that contains the reconnect deadline of 110 seconds in the advice field.</li>
 <li>The maximum size of the HTTP request post body that the server can accept from the client is 32,768 bytes.</li>
-<li>In API version 37.0 and later, Streaming API stores events for 24 hours, enabling you to replay past events. It means can fetch past events that are within the 24-hour retention period.</li>
-<li>Salesforce stores standard-volume events for 24 hours.</li>
-<li>Salesforce stores high-volume events for 72 hours.</li>
 <li>Event Bus</li>
 <li>Events are published to the event bus.</li>
 <li>Subscribers retrieve events from a channel on the event bus.</li>
