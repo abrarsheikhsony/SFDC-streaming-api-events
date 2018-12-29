@@ -107,8 +107,10 @@ attribute to it.</li>
 	</tr>
 </table>
 
-
-
+## Considerations
+<ul>
+<li>The maximum size of the HTTP request post body that the server can accept from the client is 32,768 bytes.</li>
+</ul>
 
 ## Useful Resources
 <ul>
