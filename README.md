@@ -111,6 +111,8 @@ attribute to it.</li>
 <ul>
 <li>The maximum size of the HTTP request post body that the server can accept from the client is 32,768 bytes.</li>
 <li>In API version 37.0 and later, Streaming API stores events for 24 hours, enabling you to replay past events. It means can fetch past events that are within the 24-hour retention period.</li>
+<li>Salesforce stores standard-volume events for 24 hours.</li>
+<li>Salesforce stores high-volume events for 72 hours.</li>
 </ul>
 
 ## Useful Resources
