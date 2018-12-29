@@ -85,6 +85,12 @@ Streaming API uses the Bayeux protocol and CometD for long polling.
 <li><img src="supportedimages/EventBus.png"/></li>
 </ul>
 
+## Sample JSON
+
+```
+Hello
+```
+
 ## Subscribe to and Replay Events Using a Lightning Component
 <ul>
 <li>The <a href="https://developer.salesforce.com/docs/component-library/bundle/lightning:empApi/documentation" target="_blank" alt="lightning:empApi component">lightning:empApi component</a> uses a shared CometD-based Streaming API connection, enabling you to run multiple streaming apps in the browser.</li>
