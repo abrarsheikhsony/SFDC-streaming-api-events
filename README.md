@@ -171,9 +171,14 @@ Sample JSON
 
 </ol>
 
+<ul>
+<li>Note: The ReplayId field value, which is populated by the system when the event is delivered to subscribers, refers to the position of the event in the event stream.</li>
+<li>To replay events, use the Streaming API endpoint = https://Salesforce_Instance/cometd/44.0/</li>
+</ul>
+
 ## Compare Streaming Event Features
 Please see the details in the <a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/event_comparison.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
-
+<img src="supportedimages/CompareStreamingEventFeatures.png"/>
 
 ## Replay Option
 <ul>
@@ -192,9 +197,6 @@ Please see the details in the <a href="https://developer.salesforce.com/docs/atl
 <li>Subscribers retrieve events from a channel on the event bus.</li>
 <li>The event bus decouples event publishers from event subscribers.</li>
 <li><img src="supportedimages/EventBus.png"/></li>
-<li>Note: The ReplayId field value, which is populated by the system when the event is delivered to subscribers, refers to the position of the event in the event stream.</li>
-<li>To replay events, use the Streaming API endpoint = https://Salesforce_Instance/cometd/44.0/</li>
-</ul>
 
 ## Subscribe to and Replay Events Using a Lightning Component
 <ul>
