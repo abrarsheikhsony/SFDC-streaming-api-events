@@ -171,21 +171,18 @@ Sample JSON
 
 </ol>
 
+## Replay Option
 <ul>
-<li>Note: The ReplayId field value, which is populated by the system when the event is delivered to subscribers, refers to the position of the event in the event stream.</li>
+<li>The ReplayId field value, which is populated by the system when the event is delivered to subscribers, refers to the position of the event in the event stream.</li>
 <li>To replay events, use the Streaming API endpoint = https://Salesforce_Instance/cometd/44.0/</li>
+<li>Replay ID: Subscriber receives all stored events after the event specified by its replayId value and new events.</li>
+<li>-1 (Default Behaviour): Subscriber receives new events that are broadcast after the client subscribes.</li>
+<li>-2: Subscriber receives all events, including past events that are within the retention window and new events.</li>
 </ul>
 
 ## Compare Streaming Event Features
 Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/event_comparison.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
 <img src="supportedimages/CompareStreamingEventFeatures.png"/>
-
-## Replay Option
-<ul>
-<li>Replay ID: Subscriber receives all stored events after the event specified by its replayId value and new events.</li>
-<li>-1 (Default Behaviour): Subscriber receives new events that are broadcast after the client subscribes.</li>
-<li>-2: Subscriber receives all events, including past events that are within the retention window and new events.</li>
-</ul>
 
 ## Considerations
 <ul>
