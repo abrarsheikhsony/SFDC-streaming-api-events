@@ -225,11 +225,11 @@ insert pushTopic;
 <li>Whenever the fields Name, Status__c, or Description__c are updated, a notification will be generated on this channel.</li>
 <li>
 Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/events.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
-<img src="supportedimages/118.png"/>
+<img src="supportedimages/PushTopicEvents.png"/>
 </li>
 <li>
 Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/notifications.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
-<img src="supportedimages/118.png"/>
+<img src="supportedimages/PushTopicNotifications.png"/>
 </li>
 
 </ul>
