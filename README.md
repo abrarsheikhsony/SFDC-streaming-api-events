@@ -171,6 +171,13 @@ Sample JSON
 
 </ol>
 
+## Replay Option
+<ul>
+<li>Replay ID: Subscriber receives all stored events after the event specified by its replayId value and new events.</li>
+<li>-1 (Default Behaviour): Subscriber receives new events that are broadcast after the client subscribes.</li>
+<li>-2: Subscriber receives all events, including past events that are within the retention window and new events.</li>
+</ul>
+
 ## Considerations
 <ul>
 <li>The maximum size of the HTTP request post body that the server can accept from the client is 32,768 bytes.</li>
