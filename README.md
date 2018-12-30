@@ -327,15 +327,15 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 
 ## Useful Resources
 <ul>
-<li><a href="https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview" target="_blank" alt="API Basics: When to Use Streaming API">API Basics: When to Use Streaming API</a></li>
+<li><a href="https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview" target="_blank" alt="API Basics: When to Use Streaming API">Trailhead: API Basics - When to Use Streaming API</a></li>
 
-<li><a href="https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_streaming" target="_blank" alt="API Basics: Use Streaming API">API Basics: Use Streaming API</a></li>
+<li><a href="https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_streaming" target="_blank" alt="API Basics: Use Streaming API">Trailhead: API Basics - Use Streaming API</a></li>
 
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/intro_stream.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a></li>
 
-<li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.platform_events.meta/platform_events/platform_events_intro_emp.htm" target="_blank" alt="Platform Events Developer Guide">Platform Events Developer Guide</a></li>
+<li><a href="https://trailhead.salesforce.com/content/learn/modules/platform_events_basics" target="_blank" alt="Trailhead: Platform Events Basics">Trailhead: Platform Events Basics</a></li>
 
-<li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.change_data_capture.meta/change_data_capture/cdc_intro.htm" target="_blank" alt="Change Data Capture Developer Guide">Change Data Capture Developer Guide</a></li>
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.platform_events.meta/platform_events/platform_events_intro_emp.htm" target="_blank" alt="Platform Events Developer Guide">Platform Events Developer Guide</a></li>
 
 <li><a href="https://github.com/developerforce/SalesforceDurablePushTopicDemo" target="_blank" alt="GitHub: SalesforceDurablePushTopicDemo">GitHub: SalesforceDurablePushTopicDemo</a></li>
 
@@ -343,13 +343,11 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 
 <li><a href="https://success.salesforce.com/_ui/core/chatter/groups/GroupProfilePage?g=0F93A000000HTvs" target="_blank" alt="Partner Community Group: Change Data Capture">Partner Community Group: Change Data Capture</a></li>
 
-<li><a href="https://trailhead.salesforce.com/content/learn/modules/platform_events_basics" target="_blank" alt="Trailhead: Platform Events Basics">Trailhead: Platform Events Basics</a></li>
-
 <li><a href="https://trailhead.salesforce.com/content/learn/modules/change-data-capture" target="_blank" alt="Trailhead: Change Data Capture Basics">Trailhead: Change Data Capture Basics</a></li>
 
-<li><a href="https://developer.salesforce.com/blogs/2018/08/what-is-change-data-capture.html" target="_blank" alt="Salesforce Blog: What is Change Data Capture?">Salesforce Blog: What is Change Data Capture?</a></li>
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.change_data_capture.meta/change_data_capture/cdc_intro.htm" target="_blank" alt="Change Data Capture Developer Guide">Change Data Capture Developer Guide</a></li>
 
-<li><a href="https://mohan-chinnappan-n.github.io/sfdc/cdc.html#/home" target="_blank" alt="GitHub: Salesforce Change Data Capture">GitHub: Salesforce Change Data Capture</a></li>
+<li><a href="https://developer.salesforce.com/blogs/2018/08/what-is-change-data-capture.html" target="_blank" alt="Salesforce Blog: What is Change Data Capture?">Salesforce Blog: What is Change Data Capture?</a></li>
 
 <li><a href="https://www.youtube.com/watch?v=JEQZhZYZYPg" target="_blank" alt="YouTube: Change Data Capture -Not Your Average Data Synchronization">YouTube: Change Data Capture -Not Your Average Data Synchronization</a></li>
 
@@ -358,5 +356,7 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 <li><a href="https://www.salesforce.com/video/1111054/" target="_blank" alt="Salesforce Video: Change Data Capture: Not Your Average Data Synchronization">Salesforce Video: Change Data Capture: Not Your Average Data Synchronization</a></li>
 
 <li><a href="https://www.salesforce.com/video/1778488/" target="_blank" alt="Salesforce Video: Why Subscribing To Change Data Capture Event Is Better Than Polling For Data">Salesforce Video: Why Subscribing To Change Data Capture Event Is Better Than Polling For Data</a></li>
-	
+
+<li><a href="https://mohan-chinnappan-n.github.io/sfdc/cdc.html#/home" target="_blank" alt="GitHub: Salesforce Change Data Capture">GitHub: Salesforce Change Data Capture</a></li>
+
 </ul>
