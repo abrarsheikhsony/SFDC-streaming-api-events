@@ -243,7 +243,7 @@ attribute to it.</li>
 ## Prerequisites
 <ul>
 <li>The user must have API Enabled permission.</li>
-<li>The user must enable Streaming API and Dynamic Streaming Channel Creation permissions under the User Interface section in Setup.</li>
+<li>The user must enable <b>Streaming API and Dynamic Streaming Channel Creation</b> permissions under the User Interface section in Setup.</li>
 <li>The user must have Read permission on the Push Topic standard object to receive notifications.</li>
 <li>The user must have Create permission on the Push Topic standard object to create and manage PushTopic records.</li>
 <li>The user must have Author Apex permission to create a PushTopic from the Developer Console.</li>
@@ -318,13 +318,20 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 ## 2 - Generic Events
 <ul>
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/generic_streaming_intro.htm" target="_blank" alt="What are Generic Events?">What are Generic Events?</a></li>
-<li></li>
-<li></li>
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/streamingChannel.htm" target="_blank" alt="Fields, Dynamic Streaming Channel, Supported Calls and Special Access Rules of StreamingChannel Object">Fields, Dynamic Streaming Channel, Supported Calls and Special Access Rules of StreamingChannel Object</a></li>
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/resources_push.htm" target="_blank" alt="Streaming Channel Push REST API">Streaming Channel Push REST API</a></li>
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/resources_push.htm" target="_blank" alt="Streaming Channel Push REST API">Streaming Channel Push REST API</a></li>
+<li></li>Monitor PushTopic and Generic Event Usage with the REST API
+
 </ul>
 
+## Generic Streaming Allocations
+Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/limits_generic.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
+<img src="supportedimages/GenericStreamingAllocations.png"/>
 
-
-
+## Monitor Generic and PushTopic Events Usage with the REST API
+Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/using_streaming_api_monitoring_events_usage_api.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
+<img src="supportedimages/MonitorGenericANDPushTopicEventsInRESTAPI.png"/>
 
 
 
