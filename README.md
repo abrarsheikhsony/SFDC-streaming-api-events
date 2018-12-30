@@ -320,6 +320,44 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/generic_streaming_intro.htm" target="_blank" alt="What are Generic Events?">What are Generic Events?</a></li>
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/streamingChannel.htm" target="_blank" alt="Fields, Dynamic Streaming Channel, Supported Calls and Special Access Rules of StreamingChannel Object">Fields, Dynamic Streaming Channel, Supported Calls and Special Access Rules of StreamingChannel Object</a></li>
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/resources_push.htm" target="_blank" alt="Streaming Channel Push REST API">Streaming Channel Push REST API</a></li>
+<li>
+	
+```
+SELECT Id, Name, Description, IsDynamic FROM StreamingChannel
+```
+```
+/services/data/v<API version>/sobjects/StreamingChannel/<Streaming Channel ID>/push
+
+/services/data/vXX.0/sobjects/StreamingChannel/Streaming Channel ID/push
+
+/services/data/v44.0/sobjects/StreamingChannel/0M61t000000L2L2CAK/push
+```
+Request Body
+```
+{ 
+	"pushEvents": [
+		{ 
+			"payload": "Broadcast message to all subscribers", 
+			"userIds": [] 
+		} 
+	] 
+}
+```
+The event notification that the subscribed client receives looks similar to the following.
+```
+{
+	"clientId": "1p145y6g3x3nmnlodd7v9nhi4k", 
+	"data": {
+		"payload": "Broadcast message to all subscribers", 
+		"event": {
+			"createdDate": "2016-09-16T20:43:39.392Z", 
+			"replayId": 1
+		}
+	}, 
+	"channel": "/u/Broadcast"
+}
+```
+</li>
 </ul>
 
 ## Generic Streaming Allocations
