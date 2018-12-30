@@ -38,6 +38,28 @@ Streaming API uses the Bayeux protocol and CometD for long polling.
 <li>Clients can subscribe to some types of events with Apex triggers or declaratively with Process Builder and flows.</li>
 </ul>
 
+## High Level Overview Events Features
+<table>
+	<tr>
+		<th>API</th>
+		<th>Protocol</th>
+		<th>Data Format</th>
+		<th>Communication</th>
+	</tr>
+	<tr>
+		<td>Streaming API</td>
+		<td>Bayeux</td>
+		<td>JSON</td>
+		<td>Asynchronous (stream of data)</td>
+	</tr>
+	<tr>
+		<td>Platform Events</td>
+		<td>CometD</td>
+		<td>JSON</td>
+		<td>Asynchronous (stream of data)</td>
+	</tr>
+</table>
+
 ## Streaming Events Features
 <ol type="1">
 
@@ -203,6 +225,17 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 <li>Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/using_streaming_api_durability.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.</li>
 <li><img src="supportedimages/EventBus.png"/></li>
 
+## Prerequisites
+<ul>
+<li>The user must have API Enabled permission.</li>
+<li>The user must enable Streaming API and Dynamic Streaming Channel Creation permissions under the User Interface section in Setup.</li>
+<li>The user must have Read permission on the Push Topic standard object to receive notifications.</li>
+<li>The user must have Create permission on the Push Topic standard object to create and manage PushTopic records.</li>
+<li>The user must have Author Apex permission to create a PushTopic from the Developer Console.</li>
+<li>To receive notifications, the user must have “Read” permission on the Streaming Channel standard object.</li>
+<li>To create and manage notifications, the user must have “Create” permission on the Streaming Channel standard object.</li>
+</ul>
+
 ## PushTopic
 <ul>
 <li>
@@ -219,6 +252,21 @@ pushTopic.NotifyForOperationDelete = true;
 pushTopic.NotifyForFields = 'Referenced';
 insert pushTopic;
 ```
+
+```
+SELECT Id, Name, Query FROM PushTopic
+```
+
+```
+PushTopic pushTopicRecord = [SELECT Id, Name, Query FROM PushTopic WHERE Name = 'InvoiceStatementUpdates'];
+delete pushTopicRecord;
+```
+
+<a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/deactivating_pushtopic.htm" target="_blank" alt="Deactivating a Push Topic">Deactivating a Push Topic</a>
+```
+PushTopic pt = new PushTopic(Id='0IFD0000000008jOAA', IsActive = false);
+update(pt);
+```
 </li>
 
 <li>Because NotifyForFields is set to Referenced, Streaming API will use fields in both the SELECT clause and the WHERE clause to generate a notification.</li>
@@ -234,6 +282,9 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 
 </ul>
 
+## PushTopic Streaming Allocations
+Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/limits.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
+<img src="supportedimages/PushTopicStreamingAllocations.png"/>
 
 
 
@@ -242,16 +293,6 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 
 
 
-## Prerequisites
-<ul>
-<li>The user must have API Enabled permission.</li>
-<li>The user must enable Streaming API and Dynamic Streaming Channel Creation permissions under the User Interface section in Setup.</li>
-<li>The user must have Read permission on the Push Topic standard object to receive notifications.</li>
-<li>The user must have Create permission on the Push Topic standard object to create and manage PushTopic records.</li>
-<li>The user must have Author Apex permission to create a PushTopic from the Developer Console.</li>
-<li>To receive notifications, the user must have “Read” permission on the Streaming Channel standard object.</li>
-<li>To create and manage notifications, the user must have “Create” permission on the Streaming Channel standard object.</li>
-</ul>
 
 ## Subscribe to and Replay Events Using a Lightning Component
 <ul>
@@ -261,30 +302,6 @@ attribute to it.</li>
 <li><img src="supportedimages/Lightning_empApi.png"/></li>
 <li>Then in the client-side controller, add functions to call the component methods.</li>
 </ul>
-
-## Subscribe to and Replay Events Using a Visualforce Page
-
-## High Level Overview Events Features
-<table>
-	<tr>
-		<th>API</th>
-		<th>Protocol</th>
-		<th>Data Format</th>
-		<th>Communication</th>
-	</tr>
-	<tr>
-		<td>Streaming API</td>
-		<td>Bayeux</td>
-		<td>JSON</td>
-		<td>Asynchronous (stream of data)</td>
-	</tr>
-	<tr>
-		<td>Platform Events</td>
-		<td>CometD</td>
-		<td>JSON</td>
-		<td>Asynchronous (stream of data)</td>
-	</tr>
-</table>
 
 ## Useful Resources
 <ul>
