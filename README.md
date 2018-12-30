@@ -320,9 +320,6 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/generic_streaming_intro.htm" target="_blank" alt="What are Generic Events?">What are Generic Events?</a></li>
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/streamingChannel.htm" target="_blank" alt="Fields, Dynamic Streaming Channel, Supported Calls and Special Access Rules of StreamingChannel Object">Fields, Dynamic Streaming Channel, Supported Calls and Special Access Rules of StreamingChannel Object</a></li>
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/resources_push.htm" target="_blank" alt="Streaming Channel Push REST API">Streaming Channel Push REST API</a></li>
-<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/resources_push.htm" target="_blank" alt="Streaming Channel Push REST API">Streaming Channel Push REST API</a></li>
-<li></li>Monitor PushTopic and Generic Event Usage with the REST API
-
 </ul>
 
 ## Generic Streaming Allocations
