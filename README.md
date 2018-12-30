@@ -63,7 +63,7 @@ Streaming API uses the Bayeux protocol and CometD for long polling.
 ## Streaming Events Features
 <ol type="1">
 
-<li>PushTopic</li>
+<li>PushTopic Event</li>
 <ul>
 <li>A PushTopic triggers notifications for changes in Salesforce records resulting from a create, update, delete, or undelete operation. A PushTopic <b>notification is based on the criteria that you specify in the PushTopic record and the SOQL query that you define.</b> Only the fields specified in the query are included in the notification. The PushTopic defines a subscription channel.</li>
 <li>Supported Objects: Account, Contact, Opportunity, Custom Objects</li>
@@ -92,7 +92,7 @@ Sample JSON
 </li>
 </ul>
 
-<li>Change Data Capture (CDC)</li>
+<li>Change Data Capture (CDC) Event</li>
 <ul>
 <li>Receive changes to Salesforce records <b>with all changed fields</b>. Change Data Capture supports more standard objects than PushTopic events and provides more features, such as <b>header fields that contain information about the change.</b></li>
 <li>Starting with <a href="https://releasenotes.docs.salesforce.com/en-us/spring19/release-notes/rn_data_change_events.htm" target="_blank" alt="Spring '19 release">Spring '19 release</a> Change Data Capture is now Generally Available (GA).</li>
@@ -225,6 +225,21 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 <li>Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/using_streaming_api_durability.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.</li>
 <li><img src="supportedimages/EventBus.png"/></li>
 
+## Subscribe to and Replay Events Using a Lightning Component
+<ul>
+<li>Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/code_sample_lightning_cmp.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.</li>
+<li>The <a href="https://developer.salesforce.com/docs/component-library/bundle/lightning:empApi/documentation" target="_blank" alt="lightning:empApi component">lightning:empApi component</a> uses a shared CometD-based Streaming API connection, enabling you to run multiple streaming apps in the browser.</li>
+<li>To call the component’s methods, add the lightning:empApi component inside your custom component and assign an aura:id
+attribute to it.</li>
+<li><img src="supportedimages/Lightning_empApi.png"/></li>
+<li>Then in the client-side controller, add functions to call the component methods.</li>
+<li>All types of streaming events are supported, including:</li>
+<li>PushTopic events</li>
+<li>Change Data Capture events</li>
+<li>Platform events</li>
+<li>Generic events</li>
+</ul>
+
 ## Prerequisites
 <ul>
 <li>The user must have API Enabled permission.</li>
@@ -236,7 +251,10 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 <li>To create and manage notifications, the user must have “Create” permission on the Streaming Channel standard object.</li>
 </ul>
 
-## PushTopic
+
+
+
+## 1 - PushTopic Events
 <ul>
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/pushtopic.htm" target="_blank" alt="Fields, Supported Calls and Special Access Rules of PushTopic Object">Fields, Supported Calls and Special Access Rules of PushTopic Object</a></li>
 <li>
@@ -296,24 +314,16 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 
 
 
+## 2 - Generic Events
 
 
 
 
-## Subscribe to and Replay Events Using a Lightning Component
-<ul>
-<li>Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/code_sample_lightning_cmp.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.</li>
-<li>The <a href="https://developer.salesforce.com/docs/component-library/bundle/lightning:empApi/documentation" target="_blank" alt="lightning:empApi component">lightning:empApi component</a> uses a shared CometD-based Streaming API connection, enabling you to run multiple streaming apps in the browser.</li>
-<li>To call the component’s methods, add the lightning:empApi component inside your custom component and assign an aura:id
-attribute to it.</li>
-<li><img src="supportedimages/Lightning_empApi.png"/></li>
-<li>Then in the client-side controller, add functions to call the component methods.</li>
-<li>All types of streaming events are supported, including:</li>
-<li>PushTopic events</li>
-<li>Change Data Capture events</li>
-<li>Platform events</li>
-<li>Generic events</li>
-</ul>
+
+
+
+
+
 
 ## Useful Resources
 <ul>
