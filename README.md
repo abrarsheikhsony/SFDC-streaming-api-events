@@ -280,6 +280,8 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/notifications.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
 <img src="supportedimages/PushTopicNotifications.png"/>
 </li>
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/code_sample_interactive_vfp_intro.htm" target="_blank" alt="Interactive Visualforce Page without Replay">Interactive Visualforce Page without Replay</a></li>
+<li><a href="http://www.jitendrazaa.com/blog/others/tips/streaming-api-using-jquery-salesforce/" target="_blank" alt="Sample Blog">Sample Blog</a></li>
 
 </ul>
 
