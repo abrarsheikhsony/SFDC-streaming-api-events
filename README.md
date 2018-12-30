@@ -242,6 +242,14 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 
 
 
+## Prerequisites
+<ul>
+<li>The user must have API Enabled permission.</li>
+<li>The user must enable Streaming API and Dynamic Streaming Channel Creation permissions under the User Interface section in Setup.</li>
+<li>The user must have Read permission on the PushTopic standard object to receive notifications.</li>
+<li>The user must have Create permission on the PushTopic standard object to create and manage PushTopic records.</li>
+<li>The user must have Author Apex permission to create a PushTopic from the Developer Console.</li>
+</ul>
 
 ## Subscribe to and Replay Events Using a Lightning Component
 <ul>
