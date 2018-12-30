@@ -287,6 +287,9 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/limits.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
 <img src="supportedimages/PushTopicStreamingAllocations.png"/>
 
+## Monitor PushTopic Event Usage in the Setup UI
+Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/using_streaming_api_monitoring_events_usage_ui.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a>.
+<img src="supportedimages/CompanyInformation.png"/>
 
 
 
@@ -318,5 +321,3 @@ attribute to it.</li>
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.platform_events.meta/platform_events/platform_events_intro_emp.htm" target="_blank" alt="Platform Events Developer Guide">Platform Events Developer Guide</a></li>
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.change_data_capture.meta/change_data_capture/cdc_intro.htm" target="_blank" alt="Change Data Capture Developer Guide">Change Data Capture Developer Guide</a></li>
 </ul>
-
-<img src="supportedimages/118.png"/>
