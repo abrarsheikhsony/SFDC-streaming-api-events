@@ -256,6 +256,7 @@ attribute to it.</li>
 
 ## 1 - PushTopic Events
 <ul>
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/pushtopic_events_intro.htm" target="_blank" alt="What are PushTopic Events?">What are PushTopic Events?</a></li>
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/pushtopic.htm" target="_blank" alt="Fields, Supported Calls and Special Access Rules of PushTopic Object">Fields, Supported Calls and Special Access Rules of PushTopic Object</a></li>
 <li>
 	
@@ -315,8 +316,11 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.21
 
 
 ## 2 - Generic Events
-
-
+<ul>
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/generic_streaming_intro.htm" target="_blank" alt="What are Generic Events?">What are Generic Events?</a></li>
+<li></li>
+<li></li>
+</ul>
 
 
 
