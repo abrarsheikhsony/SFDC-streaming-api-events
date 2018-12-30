@@ -379,13 +379,13 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.ap
 
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.api_streaming.meta/api_streaming/intro_stream.htm" target="_blank" alt="Streaming API Developer Guide">Streaming API Developer Guide</a></li>
 
-<li><a href="https://trailhead.salesforce.com/content/learn/modules/platform_events_basics" target="_blank" alt="Trailhead: Platform Events Basics">Trailhead: Platform Events Basics</a></li>
-
-<li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.platform_events.meta/platform_events/platform_events_intro_emp.htm" target="_blank" alt="Platform Events Developer Guide">Platform Events Developer Guide</a></li>
-
 <li><a href="https://github.com/developerforce/SalesforceDurablePushTopicDemo" target="_blank" alt="GitHub: SalesforceDurablePushTopicDemo">GitHub: SalesforceDurablePushTopicDemo</a></li>
 
 <li><a href="https://github.com/developerforce/StreamingReplayClientExtensions" target="_blank" alt="GitHub: StreamingReplayClientExtensions">GitHub: StreamingReplayClientExtensions</a></li>
+
+<li><a href="https://trailhead.salesforce.com/content/learn/modules/platform_events_basics" target="_blank" alt="Trailhead: Platform Events Basics">Trailhead: Platform Events Basics</a></li>
+
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.218.0.platform_events.meta/platform_events/platform_events_intro_emp.htm" target="_blank" alt="Platform Events Developer Guide">Platform Events Developer Guide</a></li>
 
 <li><a href="https://success.salesforce.com/_ui/core/chatter/groups/GroupProfilePage?g=0F93A000000HTvs" target="_blank" alt="Partner Community Group: Change Data Capture">Partner Community Group: Change Data Capture</a></li>
 
