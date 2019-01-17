@@ -66,7 +66,7 @@ Streaming API uses the Bayeux protocol and CometD for long polling.
 <li>PushTopic Event</li>
 <ul>
 <li>A PushTopic triggers notifications for changes in Salesforce records resulting from a create, update, delete, or undelete operation. A PushTopic <b>notification is based on the criteria that you specify in the PushTopic record and the SOQL query that you define.</b> Only the fields specified in the query are included in the notification. The PushTopic defines a subscription channel.</li>
-<li>Supported Objects: Account, Contact, Opportunity, Custom Objects</li>
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/supported_soql.htm" target="_blank" alt="Supported PushTopic Objects">Supported PushTopic Objects</a></li>
 <li>Channel = /topic/PushTopicName</li>
 <li>
 Sample JSON
