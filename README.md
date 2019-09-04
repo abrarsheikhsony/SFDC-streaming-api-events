@@ -405,4 +405,12 @@ Reference from the <a href="https://developer.salesforce.com/docs/atlas.en-us.ap
 
 <li><a href="https://mohan-chinnappan-n.github.io/sfdc/cdc.html#/home" target="_blank" alt="GitHub: Salesforce Change Data Capture">GitHub: Salesforce Change Data Capture</a></li>
 
+<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/streaming_handling_errors.htm" target="_blank" alt="Streaming API Developer Guide: Handling Streaming API Errors">Streaming API Developer Guide: Handling Streaming API Errors</a></li>
+
+<li><a href="https://github.com/cometd/cometd-javascript/blob/master/cometd.js" target="_blank" alt="cometd/cometd-javascript">cometd/cometd-javascript</a></li>
+
+<li><a href="https://github.com/developerforce/SalesforceDurableStreamingDemo/blob/master/staticresources/cometd.resource" target="_blank" alt="developerforce/SalesforceDurableStreamingDemo">developerforce/SalesforceDurableStreamingDemo</a></li>
+
+<li><a href="https://github.com/forcedotcom/EMP-Connector/blob/master/src/main/java/com/salesforce/emp/connector/EmpConnector.java" target="_blank" alt="forcedotcom/EMP-Connector">forcedotcom/EMP-Connector</a></li>
+
 </ul>
